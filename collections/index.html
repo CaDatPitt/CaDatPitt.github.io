@@ -7,7 +7,8 @@
 
   <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css" />
   
-  <link type="text/css" rel="stylesheet" href="../css/bootstrap-table.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/dataTables.min.css" />
+  <link type="text/css" rel="stylesheet" href="../css/dataTables.bootstrap4.min.css" />
   <!-- Custom styles for this template -->
   <link href="../css/jumbotron.css" rel="stylesheet">
   <link rel="icon" href="../favicon.ico">
@@ -64,14 +65,14 @@
               <h3></h3>
             </div>
       <!-- Begin bootstrap-table block -->
-	<div>
+	<div id = "filters">
    
-   <table id="table">
+   <table id="table" class="table table-striped">
         <thead>
     <tr>
-      <th>name</th>
-      <th>summary</th>
-      <th>url</th>
+      <th>Title</th>
+      <th>Summary</th>
+      <th>URL</th>
     </tr>
   </thead>
   <tbody>
@@ -79,101 +80,6 @@
       <td>19th Century Schoolbooks</td>
       <td>A full-text collection of over one hundred textbooks published in the 1800s; includes two surveys of historic schoolbooks by Dr. John A. Nietz, the founder of the Nietz Old Textbook Collection.</td>
       <td>https://digital.library.pitt.edu/collection/19th-century-schoolbooks</td>
-    </tr>
-    <tr>
-      <td>Abner Shimony Papers</td>
-      <td>An American philosopher of science and physicist, Abner Shimony focused much of his work on the interaction between quantum mechanics and relativity theory. He did substantial research on complemantarity in multiparticle quantum interferometry and in quantum entanglement, and wrote books and research articles on the foundations of quantum mechanics.</td>
-      <td>https://digital.library.pitt.edu/collection/abner-shimony-papers</td>
-    </tr>
-    <tr>
-      <td>Aerial Photographs of Pittsburgh</td>
-      <td>Visual images from the 1923-1937 document aerial views of Downtown Pittsburgh, Mount Washington, the North Side, the Point, Oakland, and Homestead.</td>
-      <td>https://digital.library.pitt.edu/collection/aerial-photographs-pittsburgh</td>
-    </tr>
-    <tr>
-      <td>African American Chamber of Commerce of Western Pennsylvania</td>
-      <td>The mission of the African American Chamber of  Commerce of Western Pennsylvania (the Chamber) is to continuously improve business and professional opportunities for African American Business owners and professionals. The material available in this online collection documents some of the history of the AACCWP through past announcements on programs and events.</td>
-      <td>https://digital.library.pitt.edu/collection/african-american-chamber-commerce-western-pennsylvania</td>
-    </tr>
-    <tr>
-      <td>African American Jazz Preservation Society of Pittsburgh Oral History Project Records and Recordings</td>
-      <td>This oral history collection consists of transcripts, cassette tapes, project working files and background organizational records of the interviews conducted during the African American Jazz Preservation Society of Pittsburgh (AAJPSP) Oral History Project (1995-1999). The project documents individual African American Jazz Musicians in Pittsburgh as well as their efforts to organize. The content of the interviews span from 1904 to 1999.</td>
-      <td>https://digital.library.pitt.edu/collection/african-american-jazz-preservation-society-pittsburgh-oral-history-project-records-recordings</td>
-    </tr>
-    <tr>
-      <td>African American Construction Workers of Pittsburgh Photographs</td>
-      <td>Visual images depict African American construction workers in Pittsburgh in 1957-1960, and from efforts by African American leaders like Ellis R. McGruder, Jr. and Nate Smith in the 1960s and 1970s to bring about greater employment opportunities for African Americans in the building trades in Pittsburgh.</td>
-      <td>https://digital.library.pitt.edu/collection/african-american_construction-workers-pittsburgh-photographs</td>
-    </tr>
-    <tr>
-      <td>Alexander Addison Papers</td>
-      <td>Contains correspondence to Alexander Addison, the president judge of the Fifth District Court of Pennsylvania (1791-1802), from Hugh Henry Brackenridge, William Findley and Charles Nisbet regarding political events in the U. S. and Europe, particularly the Constitutional Convention, Jay and Pinckney Treaties, Indian wars, and the Whiskey Rebellion.</td>
-      <td>https://digital.library.pitt.edu/collection/alexander-addison-papers</td>
-    </tr>
-    <tr>
-      <td>Alexander Lowy Papers</td>
-      <td>Consists of 14 of 16 patents that Dr. Lowy secured for his research, some memorabilia from his college years, and materials related to the dedication of the Alexander Lowy Memorial Seminar Room in Langley Hall on May 25, 1959.</td>
-      <td>https://digital.library.pitt.edu/collection/alexander-lowy-papers</td>
-    </tr>
-    <tr>
-      <td>Allegheny Observatory Records</td>
-      <td>Visual images from the 1890s-1930s depict the construction and equipment, experiments, inventors and directors of the Allegheny Observatory located in Pittsburgh’s Northside neighborhood.</td>
-      <td>https://digital.library.pitt.edu/collection/allegheny-observatory-records</td>
-    </tr>
-    <tr>
-      <td>Allen Family Papers</td>
-      <td>William P. Allen, member of an Irish nationalist society know as Fenians, was hanged November 23, 1867 at New Barley Prison, Salford, England, for his participation in the Fenian attack at Manchester on a prison van containing Fenian prisoners. Collection contains correspondence, newspaper clippings, and other memorabilia from 1867.</td>
-      <td>https://digital.library.pitt.edu/collection/allen-family-papers</td>
-    </tr>
-    <tr>
-      <td>American Left Ephemera Collection</td>
-      <td>A wide-range of primary source textual and visual material documents left-wing organizations in the U.S. during the 20th century.</td>
-      <td>https://digital.library.pitt.edu/collection/american-left-ephemera-collection</td>
-    </tr>
-    <tr>
-      <td>Archives of Industrial Society Photograph Collection</td>
-      <td>Images visually document a wide range of topics relating to the history of Pittsburgh including neighborhoods, infrastructure, and landscape selected from the AIS vertical files.</td>
-      <td>https://digital.library.pitt.edu/collection/archives-industrial-society-photograph-collection</td>
-    </tr>
-    <tr>
-      <td>Archives of Scientific Philosophy</td>
-      <td>Philosophy  has always been influenced by scientific work, and its deliberations have frequently followed scientific models.  In recent decades the University of Pittsburgh has established itself as a leader in scientific philosophy, one of the 20th century's most important intellectual currents. To further stimulate research and publication, the University has committed itself to assembling archival resources for investigating the history of scientific philosophy.  Most materials are housed in the Special Collections Department of the University's Hillman Library.</td>
-      <td>https://digital.library.pitt.edu/collection/archives-scientific-philosophy</td>
-    </tr>
-    <tr>
-      <td>Arlen Specter Senatorial Papers</td>
-      <td>Press releases and speeches documenting the career of U.S. Senator Arlen Specter, who served as Pennsylvania’s longest-tenured Senator from 1981 to 2011. Topics include information on Supreme Court nomination hearings, local appropriations news, and reactions to Presidential statements, among many others.</td>
-      <td>https://digital.library.pitt.edu/collection/arlen-specter-senatorial-papers</td>
-    </tr>
-    <tr>
-      <td>Audubon's Birds of America</td>
-      <td>Consists of a complete double elephant folio set (435 plates) of Audubon’s Birds of America and his Ornithological Biography. Also available on a dedicated website (audubon.pitt.edu).</td>
-      <td>https://digital.library.pitt.edu/collection/audubons-birds-america</td>
-    </tr>
-    <tr>
-      <td>Barry Rosensteel Japanese Print Collection</td>
-      <td>Woodblock prints from 1760-1956 by over 40 artists depict Japanese culture through detailed depictions of portraits, landscapes and theatrical performances, taking into account some of Japan's rich history.</td>
-      <td>https://digital.library.pitt.edu/collection/barry-rosensteel-japanese-print-collection</td>
-    </tr>
-    <tr>
-      <td>Beazel Family Papers</td>
-      <td>Papers hold the accounting records and personal and business correspondence between 1809-1888 related to the Beazel family, who lived in Westmoreland County and Washington County, Pennsylvania.</td>
-      <td>https://digital.library.pitt.edu/collection/beazel-family-papers</td>
-    </tr>
-    <tr>
-      <td>Bedford County Township Tax Receipts</td>
-      <td>Contains tax receipts from various townships in Bedford County, Pa. (1763-1838); each tax receipt includes a list of names of taxpayers along with the amount paid to the township.</td>
-      <td>https://digital.library.pitt.edu/collection/bedford-county-township-tax-receipts</td>
-    </tr>
-    <tr>
-      <td>Birmingham United Church of Christ Records</td>
-      <td>Collection contains a constitution and journal, history, minute books, lists of members, memorial publications, baptismal, marriage, burial, and financial records from 1843-1977 of the Birmingham United Church of Christ.</td>
-      <td>https://digital.library.pitt.edu/collection/birmingham-united-church-christ-records</td>
-    </tr>
-    <tr>
-      <td>Bruce Drisbach-American Steel &amp; Wire Company Photographs</td>
-      <td>Visual images from 1915-1917 depict the construction of the American Steel &amp; Wire Company building, equipment, and worker housing construction in Donora (Pa.).</td>
-      <td>https://digital.library.pitt.edu/collection/bruce-drisbach-american-steel-wire-company-photographs</td>
     </tr>
     <tr>
       <td>Abner Shimony Papers</td>
@@ -1018,103 +924,58 @@
 <script src="../js/jquery-3.2.1.slim.min.js"></script> 
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/bootstrap-table.min.js"></script>
+<script src="../js/datatables.min.js"></script>
+<script src="../js/dataTables.bootstrap4.min.js"></script>
 <script>
-$('#table').bootstrapTable({
-     
-    pagination: 'true', search:'true', sortName: 'title', getAllSelections: '', classes:'table table-bordered table-hover table-striped',
-    columns: [{
-        field: 'title',
-        sortable: 'true',
-        title: 'Title'
-    }, {
-        field: 'summary',
-        sortable: 'true',
-        title: 'Summary'
-    },{
-        field: 'url',
-        sortable: 'true',
-        searchable:'false',
-        title: 'URL'
-    }]
-});
 
-$('.search').addClass('pull-left').removeClass('pull-right').css('width', '45%');
+$('#table').dataTable({
+      "columnDefs": [
+    { "searchable": false, "targets": 2}
+  ]
+    });
 
-$('.fixed-table-toolbar').append('<button id="titles" type="submit" class="btn btn-outline-dark filter">Search Only Titles</button><button id="summaries" type="submit" class="btn btn-outline-dark filter">Search Only Summaries</button><button id="both" type="submit" class="btn btn-primary filter">Search Both</button>');
+$('#table_filter').find($('input')).removeClass('form-control-sm').css({'width':'400px'});
+$('#filters').prepend('<div id="filter-button-frame"><button id="titles" type="submit" class="btn btn-outline-dark filter">Search Only Titles</button><button id="summaries" type="submit" class="btn btn-outline-dark filter">Search Only Summaries</button><button id="both" type="submit" class="btn btn-primary filter">Search Titles and Summaries</button></div>');
 
 $('#titles').click( function () {
-
+  $('#table').dataTable({
+      "destroy": true,
+      "columnDefs": [
+    { "searchable": false, "targets": 1 },
+    { "searchable": false, "targets": 2}
+  ]
+    });
+  $('#table_filter').find($('input')).removeClass('form-control-sm').css({'width':'400px'});
   $('#titles').addClass('btn-primary').removeClass('btn-outline-dark');
   $('#summaries').removeClass('btn-primary').addClass('btn-outline-dark');
   $('#both').removeClass('btn-primary').addClass('btn-outline-dark');
-  $('#table').bootstrapTable( {
-    columns: [{
-        field: 'title',
-        sortable: 'true',
-        searchable:'true',
-        title: 'Title'
-    }, {
-        field: 'summary',
-        sortable: 'true',
-        searchable:'false',
-        title: 'Summary'
-    },{
-        field: 'url',
-        sortable: 'true',
-        title: 'URL'
-    }]
-    });
 });
-$('#summaries').click(function () {
 
+$('#summaries').click( function () {
+  $('#table').dataTable({
+      "destroy": true,
+      "columnDefs": [
+    { "searchable": false, "targets": 0 },
+    { "searchable": false, "targets": 2}
+  ]
+    });
+  $('#table_filter').find($('input')).removeClass('form-control-sm').css({'width':'400px'});
   $('#summaries').addClass('btn-primary').removeClass('btn-outline-dark');
   $('#titles').removeClass('btn-primary').addClass('btn-outline-dark');
   $('#both').removeClass('btn-primary').addClass('btn-outline-dark');
-
-  $('#table').bootstrapTable( {
-    columns: [{
-        field: 'title',
-        sortable: 'true',
-        searchable:'false',
-        title: 'Title'
-    }, {
-        field: 'summary',
-        sortable: 'true',
-        searchable:'true',
-        title: 'Summary'
-    },{
-        field: 'url',
-        sortable: 'true',
-        title: 'URL',
-        
-    }]
-    });
-
 });
+
 $('#both').click( function () {
+  $('#table').dataTable({
+      "destroy": true,
+      "columnDefs": [
+    { "searchable": false, "targets": 2}
+  ]
+    });
+  $('#table_filter').find($('input')).removeClass('form-control-sm').css({'width':'400px'});
   $('#summaries').removeClass('btn-primary').addClass('btn-outline-dark');
   $('#titles').removeClass('btn-primary').addClass('btn-outline-dark');
   $('#both').addClass('btn-primary').removeClass('btn-outline-dark');
-
-  $('#table').bootstrapTable( {
-    columns: [{
-        field: 'title',
-        sortable: 'true',
-        searchable:'true',
-        title: 'Title'
-    }, {
-        field: 'summary',
-        sortable: 'true',
-        searchable:'true',
-        title: 'Summary'
-    },{
-        field: 'url',
-        sortable: 'true',
-        title: 'URL',
-        
-    }]
-    });
 });
 
 </script>
