@@ -1046,6 +1046,8 @@ $('.fixed-table-toolbar').append('<button id="titles" type="submit" class="btn b
 $('#titles').click( function () {
 
   $('#titles').addClass('btn-primary').removeClass('btn-outline-dark');
+  $('#summaries').removeClass('btn-primary').addClass('btn-outline-dark');
+  $('#both').removeClass('btn-primary').addClass('btn-outline-dark');
   $('#table').bootstrapTable( {
     columns: [{
         field: 'title',
@@ -1067,6 +1069,9 @@ $('#titles').click( function () {
 $('#summaries').click(function () {
 
   $('#summaries').addClass('btn-primary').removeClass('btn-outline-dark');
+  $('#titles').removeClass('btn-primary').addClass('btn-outline-dark');
+  $('#both').removeClass('btn-primary').addClass('btn-outline-dark');
+
   $('#table').bootstrapTable( {
     columns: [{
         field: 'title',
@@ -1088,7 +1093,28 @@ $('#summaries').click(function () {
 
 });
 $('#both').click( function () {
-  $('#table').bootstrapTable('filterBy', {});
+  $('#summaries').removeClass('btn-primary').addClass('btn-outline-dark');
+  $('#titles').removeClass('btn-primary').addClass('btn-outline-dark');
+  $('#both').addClass('btn-primary').removeClass('btn-outline-dark');
+
+  $('#table').bootstrapTable( {
+    columns: [{
+        field: 'title',
+        sortable: 'true',
+        searchable:'true',
+        title: 'Title'
+    }, {
+        field: 'summary',
+        sortable: 'true',
+        searchable:'true',
+        title: 'Summary'
+    },{
+        field: 'url',
+        sortable: 'true',
+        title: 'URL',
+        
+    }]
+    });
 });
 
 console.log($('#table'));
