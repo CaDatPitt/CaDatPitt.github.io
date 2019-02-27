@@ -16,6 +16,9 @@
   .fixed-table-container {
     padding: 15px;
   }
+  .search.pull-left {
+    float: left;
+  }
 </style>
 </head>
 <body>
@@ -1031,11 +1034,64 @@ $('#table').bootstrapTable({
     },{
         field: 'url',
         sortable: 'true',
+        searchable:'false',
         title: 'URL'
     }]
 });
 
+$('.search').addClass('pull-left').removeClass('pull-right').css('width', '45%');
 
+$('.fixed-table-toolbar').append('<button id="titles" type="submit" class="btn btn-outline-dark filter">Search Only Titles</button><button id="summaries" type="submit" class="btn btn-outline-dark filter">Search Only Summaries</button><button id="both" type="submit" class="btn btn-primary filter">Search Both</button>');
+
+$('#titles').click( function () {
+
+  $('#titles').addClass('btn-primary').removeClass('btn-outline-dark');
+  $('#table').bootstrapTable( {
+    columns: [{
+        field: 'title',
+        sortable: 'true',
+        searchable:'true',
+        title: 'Title'
+    }, {
+        field: 'summary',
+        sortable: 'true',
+        searchable:'false',
+        title: 'Summary'
+    },{
+        field: 'url',
+        sortable: 'true',
+        title: 'URL'
+    }]
+    });
+});
+$('#summaries').click(function () {
+
+  $('#summaries').addClass('btn-primary').removeClass('btn-outline-dark');
+  $('#table').bootstrapTable( {
+    columns: [{
+        field: 'title',
+        sortable: 'true',
+        searchable:'false',
+        title: 'Title'
+    }, {
+        field: 'summary',
+        sortable: 'true',
+        searchable:'true',
+        title: 'Summary'
+    },{
+        field: 'url',
+        sortable: 'true',
+        title: 'URL',
+        
+    }]
+    });
+
+});
+$('#both').click( function () {
+  $('#table').bootstrapTable('filterBy', {});
+});
+
+console.log($('#table'));
 </script>
 
 </body>
