@@ -126,7 +126,9 @@
               </ul>
               </p>
 
-              <p>The data layers are accompanied by Python and XSLT scripts for extracting and transforming source data to create base layers, as well as resources for creating extension layers. Scholars can download data layers in the repository, request source data and base layers for library collections not already represented in the repository, and share their own extension layers in the repository. Our project serves as a model for how other libraries can share collections data, and our repository can support data layers for collections from other libraries, though local and (inter)national element sets and controlled vocabularies may be used differently across institutions.</p>
+              <p>Scholars can download data layers in the repository, request source data and base layers for library collections not already represented in the repository, and share their own extension layers in the repository. Our project serves as a model for how other libraries can share collections data, and our repository can support data layers for collections from other libraries, though local and (inter)national element sets and controlled vocabularies may be used differently across institutions.</p>
+              <p>The base layers are created using a Python program that extracts and transforms source data into a flat data model (i.e., CSV). This data munging/wrangling process involves mapping the base layer elements to their respective nodes in source data XML files (i.e., EAD, MODS, MARCXML, or RELS-EXT/RDF), selecting only these mapped nodes for extraction, inputting (sometimes processed) values into rows and columns, and outputting one or two CSV files for collection-level and/or item-level data.</p>
+
             </div>
             <a name="instructional-modules"></a>
             <hr/>
