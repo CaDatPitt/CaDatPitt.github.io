@@ -89,13 +89,14 @@
 
               <p>This project comes out of a longstanding desire on the part of the project team members to build better collaborative models for analyzing and improving the datasets behind the ULS digital collections. For several years, ULS units, including but not limited to Archives and Special Collections, Cataloguing, Digital Scholarship Services, have been working on a unified platform for digital collections that would facilitate a range of digital projects. Simultaneously, Lavin's scholarship and teaching have focused on cultural analytics approaches to book historical research questions, especially the role of periodicals in the framing of literary taste and prestige. The members of this project team collectively represent an important example of the kinds of stakeholders who might be coming together on a range of collections as data implementations. Our project foremost serves communities of would-be collaborators by contributing to ongoing discussions about how the overlapping goals of teaching, research, and collections development can work in concert to proliferate and enrich digital materials, especially materials highlighting the voices of underrepresented groups, which are often given inadequate attention for structural or systemic reasons.</p>
             </div>
+            
               <a name="objectives"></a>
               <hr/>
             <div>
               <h3>Objectives</h3>
               <p>The CaD@Pitt project aims to increase the visibility and discoverability of library collections, make library collections data accessible for computational use, and enable scholars to extend/enrich collections data with critical, research-driven layers of additional data. This project is targeted toward library workers, scholars (researchers, students, and instructors), and constituents of the public who are seeking to implement similar endeavors at their own institution, acquire and generate collections data, or develop/incorporate collections data-centered curricula to teach critical and computationally minded data practices.</p>
-
             </div>
+
               <a name="collections"></a>
               <hr/>
             <div>
@@ -113,6 +114,7 @@
 
               <p>Our project specifically targets (collections of) serials and ephemera because the ULS has many such materials, both digitized and non-digitized, in which the voices of marginalized and underrepresented groups are expressed.<sup><a href="#notes">1</a></sup> These materials are of strong interest to student and faculty researchers looking for inclusive representation because historically, the conditions of their production and reception often made serials and ephemera more desirable venues for specific counterpublics than monograph publication.<sup><a href="#notes">2</a></sup></p>
             </div>
+
             <a name="data-layers"></a>
             <hr/>
             <div>
@@ -129,8 +131,8 @@
               <p>The base layers are created using a Python program that extracts and transforms source data into a flat data model (i.e., CSV). This data munging/wrangling process involves mapping the base layer elements to their respective nodes in source data XML files (i.e., EAD, MODS, MARCXML, or RELS-EXT/RDF), selecting only these mapped nodes for extraction, inputting (sometimes processed) values into rows and columns, and outputting one or two CSV files for collection-level and/or item-level data.</p>
 
               <p>The data layers and Python scripts are hosted in the <a href="https://github.com/CaDatPitt/data-layers">CaD@Pitt Data Layers Repository</a>. Scholars can <a href="https://cadatpitt.github.io/documentation/03-using-the-repository.html#download-the-repository-contents">download data layers and scripts</a> from the repository or <a href="https://cadatpitt.github.io/documentation/03-using-the-repository.html#clone-the-repository">clone the repository</a>, <a href="https://cadatpitt.github.io/documentation/05-data-extraction-and-transformation-workflow.html">request source data and base layers</a> for library collections not already represented in the repository, and share their own extension layers in the repository. Our project serves as <em>a</em> model for how other libraries can share collections data, and our repository can support data layers for collections from other libraries, though local and (inter)national element sets and controlled vocabularies may be used differently across institutions.</p>
-
             </div>
+
             <a name="instructional-modules"></a>
             <hr/>
             <div>
