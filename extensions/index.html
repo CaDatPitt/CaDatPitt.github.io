@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Extension Projects • CaD@Pitt</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/jumbotron.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="/">CaD@Pitt</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="/project">Our Project</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/extensions">Extension Projects<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/modules">Instructional Modules</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/documentation">Documentation</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/events">Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/team">Team</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/partners">Partners</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Extension Projects</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+
+            <p>Extension layers are scholar-created datasets that enrich/augment library collections data (i.e., <a href="https://cadatpitt.github.io/documentation/data-dictionary/introduction.html#source-data" target="_blank">source data</a> and <a href="https://cadatpitt.github.io/documentation/data-dictionary/introduction.html#base-layers" target="_blank">base layers</a>), with accompanying documentation. They may improve the quality of the metadata in the source data and base layers, contribute data missing in library collection data, introduce new elements/data points, or not only (or at all) take the form of spreadsheet files; for example, an extension layer might include data visualizations. Below is a listing of extension projects, by collection, as of August 2021.</p>
+
+            <br/>
+
+            <h2>American Left Ephemera Collection</h2>
+
+            <br/>
+
+            <h3>Geotags Layer – Van Schenck</h3>
+            <p><strong>Creator</strong>: Reed Van Schenck (Email: <a href="mailto:crv18@pitt.edu">crv18@pitt.edu</a>; Twitter: <a href="https://twitter.com/reedvanschenck" target="_blank">Reed Van Schenck</a>)</p>
+            <p><strong>Last modified</strong>: August 4, 2021</p>
+            <p><strong>Description</strong>: This extension layers contributes latitude, longitude, and address data for all of the events located in Pittsburgh and its surrounding metropolitan area that appear in items within the <a href="https://digital.library.pitt.edu/collection/american-left-ephemera-collection" target="_blank">American Left Ephemera Collection</a>.</p>
+            <p><a class="btn btn-primary btn-lg" href="https://github.com/CaDatPitt/data-layers/tree/master/extension-layers/american-left-ephemera/geotags_van-schenck" target="_blank" role="button">View Project</a></p>
+
+            <br/>
+
+            <hr/>
+
+            <br/>
+
+            <h2>Bob Nelkin Collection of Allegheny County Chapter of the Pennsylvania Association for Retarded Children (ACC-PARC) Records</h2>
+
+            <br/>
+
+            <h3>Natural Language Processing Layer – Naismith</h3>
+            <p><strong>Creator</strong>: Ben Naismith (Email: <a href="mailto:bnaismith@pitt.edu">bnaismith@pitt.edu</a>)</p>
+            <p><strong>Last modified</strong>: July 31, 2021</p>
+            <p><strong>Description</strong>: This project offers a natural language processing extension layer for the <a href="https://historicpittsburgh.org/collection/nelkin-acc-parc-records" target="_blank">Bob Nelkin Collection of Allegheny County Chapter of the Pennsylvania Association for Retarded Children (ACC-PARC) Records</a>.There are five sections which may be of use to researchers interested in the collection:
+              <ul>
+                <li>
+                  <strong>Exploratory Data Analysis (EDA)</strong>: Exploratory data analysis provides a standard first step in any data exploration and corpus analysis. In this case, the EDA looks at the contents of the source-data and base-layers folders to better understand the quantity and types of data present in the collection.
+                </li>
+                <li>
+                  <strong>Pre-processing</strong>: Pre-processing is carried out to create a single dataframe with the texts and their metadata, with standardized fields and no missing data.
+                </li>
+                <li>
+                  <strong>Processing</strong>: Processing involves manipulating the text into formats which may be of use to researchers and allows for greater analysis. This notebook carries out the following processes: tokenization, part-of-speech tagging, lemmatization, spelling correction, and genre tagging.
+                </li>
+                <li>
+                  <strong>Text analysis</strong>: Text analysis in this case refers to the use machine learning tools to extract information about the texts in terms of entities, topics, and sentiment. All of the text analysis tools use APIs from meaningcloud.com. This information can be used to filter only those texts related to certain topics or containing certain sentiments.
+                </li>
+                <li>
+                  <strong>Lexical analysis</strong>: The tools and data in this notebook are intended to allow for a greater understanding of the lexis used in the collection's texts through consideration of frequencies of lexical items and the contexts in which they occur. There are two sections to the notebook, Concordancing and Collocations.
+                </li>
+              </ul>
+              <p><a class="btn btn-primary btn-lg" href="https://github.com/CaDatPitt/data-layers/tree/master/extension-layers/bob-nelkin-collection/natural-language-processing_naismith" target="_blank" role="button">View Project</a></p>
+            </p>
+
+          </br>
+
+            <h3>OCR Layer – Naismith</h3>
+            <p><strong>Creator</strong>: Ben Naismith (Email: <a href="mailto:bnaismith@pitt.edu">bnaismith@pitt.edu</a>)</p>
+            <p><strong>Last modified</strong>: July 31, 2021</p>
+            <p><strong>Description</strong>: This directory contains text files for each of the texts in the Bob Nelkin Collection of Allegheny County Chapter of the Pennsylvania Association for Retarded Children (ACC-PARC) Records collection. The original source data OCR folder contained a number of blank files, so all PDF files were converted to text files again using the Optical Character Recognition (OCR) workstation at Pitt, which uses ABBYY FineReader 14 to convert images to text. These new text files are used throughout the Natural Language Processing Layer – Naismith.
+            </p>
+            <p><a class="btn btn-primary btn-lg" href="https://github.com/CaDatPitt/data-layers/tree/master/extension-layers/bob-nelkin-collection/ocr_naismith/" target="_blank" role="button">View Project</a></p>
+
+          </br>
+
+            <h3>Parts-of-Speech Tags Layer – Naismith</h3>
+            <p><strong>Creator</strong>: Ben Naismith (Email: <a href="mailto:bnaismith@pitt.edu">bnaismith@pitt.edu</a>)</p>
+            <p><strong>Last modified</strong>: July 31, 2021</p>
+            <p><strong>Description</strong>: This extension layer contains parts-of-speech (POS) tags for the Bob Nelkin Collection of Allegheny County Chapter of the Pennsylvania Association for Retarded Children (ACC-PARC) Records. The pos-tagged folder contains each of the text files from the collection after tokenization and POS tagging using the CLAWS7 tagset (see the <a href="https://github.com/CaDatPitt/data-layers/tree/master/extension-layers/bob-nelkin-collection/natural-language-processing_naismith/processing/bob-nelkin-collection_processing.ipynb" target="_blank">bob-nelkin-collection_processing.ipynb notebook for details</a>).
+            </p>
+            <p><a class="btn btn-primary btn-lg" href="https://github.com/CaDatPitt/data-layers/tree/master/extension-layers/bob-nelkin-collection/pos-tags_naismith/" target="_blank" role="button">View Project</a></p>
+
+            <br/>
+
+            <hr/>
+
+            <br/>
+
+            <h2>Communist Collection of A.E. Forbes</h2>
+
+            <br/>
+
+            <h3>Geotags Layer – Van Schenck</h3>
+            <p><strong>Creator</strong>: Reed Van Schenck (Email: <a href="mailto:crv18@pitt.edu">crv18@pitt.edu</a>; Twitter: <a href="https://twitter.com/reedvanschenck" target="_blank">Reed Van Schenck</a>)</p>
+            <p><strong>Last modified</strong>: August 4, 2021</p>
+            <p><strong>Description</strong>: This extension layers contributes latitute and longitude coordinates as well as modern-day street addresses corresponding to events held in and around Pittsburgh that are mentioned in items within the <a href="https://digital.library.pitt.edu/collection/communist-collection-ae-forbes" target="_blank">Communist Collection of A.E. Forbes</a>. This data helps researchers visualize the Communist network in Pittsburgh and identify neighborhoods with greater or lesser Communist activity. This layer also includes a "Precision" field where discrepancies about locational data and ranges of confidence are mentioned; entries with no precision data are high confidence.</p>
+            <p><a class="btn btn-primary btn-lg" href="https://github.com/CaDatPitt/data-layers/tree/master/extension-layers/communist-collection-forbes/geotags_van-schenck" target="_blank" role="button">View Project</a></p>
+
+            <br/>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+  <hr/>
+    <footer class="container"><div class="row">
+      <div class="col-md-9"><p>This website's content is available under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 Unported (CC BY-NC 4.0)</a>, which provides users the right to "copy and redistribute the material in any medium or format" or "remix, transform, and build upon the material" and "remix, transform, and build upon the material," provided that the usage gives appropriate credit, provides a link to the license, and indicates if changes were made. The NonCommercial aspect of this license means that you may not use the material for any commercial purposes. </p></div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2"><img id="ghlogo" src="../images/GitHub-Logos/GitHub_Logo.png">
+            <a class="btn btn-primary" href="https://github.com/CaDatPitt" target="blank" role="button">View Repositories &raquo;</a>
+          </div></div>
+
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-3.2.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
