@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>CaD@Pitt</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">CaD@Pitt</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/project">Our Project</a>
+        </li
+
+        <li class="nav-item">
+          <a class="nav-link" href="/team">Team</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/partners">Partners</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/modules">Instructional Modules</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/events">Events<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/documentation">Documentation</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Pioneering CaD@Pitt:</h1>
+          <h2>A Discussion of Scholarly Projects Using Library Collections as Data at Pitt</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4>Date and Time:</h4>
+                Friday, October, 2022<br>
+                1:00 p.m. to 2:00 p.m.
+              </div>
+              <div class="list-group-item">
+                <h4>Location:</h4>
+                Zoom
+              </div>
+              <div class="list-group-item">
+                <h4>Presentation:</h4>
+                <a href="https://bit.ly/pioneering-cadatpitt">bit.ly/pioneering-cadatpitt</a>
+              </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <img style="{width:'100%'; height: auto;}"src="/images/hpgh-1.png"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          <p>
+            This panel will bring together scholars who have worked on data-oriented projects using library collections. These projects all took place during the course of a single semester and demonstrate various ways that scholars can use and extend library data. Scholars working with library data have curated themed subcollections of Library collections, created datasets for (computational) research and analysis, and analyzed textual data from collections materials to identify interesting features or patterns. Partnerships with these researchers were enabled by the ongoing Collections as Data @ Pitt project, which aims to make library collections data more accessible for research, teaching, and learning.Participants will be grouped into different teams based on topics of interest and will work together to add information to photos. Complete the registration form to let organizers know what topics are interesting to you!
+          </p>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <footer class="container">
+      <hr>
+      <div class="row">
+
+      <div class="col-md-9"><p>This website's content is available under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 Unported (CC BY-NC 4.0)</a>, which provides users the right to "copy and redistribute the material in any medium or format" or "remix, transform, and build upon the material" and "remix, transform, and build upon the material," provided that the usage gives appropriate credit, provides a link to the license, and indicates if changes were made. The NonCommercial aspect of this license means that you may not use the material for any commercial purposes. </p></div>
+      <div class="col-md-1"></div>
+      <div class="col-md-2"><img id="ghlogo" src="../images/GitHub-Logos/GitHub_Logo.png">
+            <a class="btn btn-primary" href="https://github.com/CaDatPitt" target="blank" role="button">View Repositories &raquo;</a>
+          </div></div>
+
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-3.2.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
